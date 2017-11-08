@@ -166,7 +166,7 @@ extern NSString * const JotStylusManagerDiscoveryAttemptedButBluetoothOffNotific
  *
  * @see stylusModelFriendlyName
  */
-@property (nonatomic) NSString *stylusFriendlyName;
+@property (strong, nonatomic) NSString *stylusFriendlyName;
 
 /**
  * YES if the stylus supports having a friendly name, Otherwise NO.
@@ -433,7 +433,7 @@ extern NSString * const JotStylusManagerDiscoveryAttemptedButBluetoothOffNotific
  */
 @property (readonly) JotStylusMotionManager *jotStylusMotionManager;
 
-@property AdonitTouchTypeIdentifier *touchTypeIdentifier;
+@property (strong, nonatomic) AdonitTouchTypeIdentifier *touchTypeIdentifier;
 
 //INTERNAL USE ONLY
 
